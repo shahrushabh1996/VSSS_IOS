@@ -1,0 +1,497 @@
+> ionic-app-scripts build --target cordova --platform ios -d
+[20:00:29]  ionic-app-scripts 3.1.11 
+[20:00:29]  build dev started ... 
+[20:00:29]  clean started ... 
+[20:00:29]  clean finished in 31 ms 
+[20:00:29]  copy started ... 
+[20:00:29]  deeplinks started ... 
+[20:00:29]  deeplinks finished in 549 ms 
+[20:00:29]  transpile started ... 
+[20:00:36]  transpile finished in 6.89 s 
+[20:00:36]  preprocess started ... 
+[20:00:36]  preprocess finished in less than 1 ms 
+[20:00:36]  webpack started ... 
+[20:00:36]  copy finished in 7.70 s 
+[20:00:47]  webpack finished in 10.37 s 
+[20:00:47]  sass started ... 
+Without `from` option PostCSS could generate wrong source map and will not find Browserslist config. Set it to CSS file path or to `undefined` to prevent this warning.
+[20:00:48]  sass finished in 1.59 s 
+[20:00:48]  postprocess started ... 
+[20:00:48]  postprocess finished in 16 ms 
+[20:00:48]  lint started ... 
+[20:00:48]  build dev finished in 19.75 s 
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/home/home.ts, line: 168 [39m
+            Duplicate variable: 'i' 
+
+[2m     L167:  [22mthis.prev_page = 'show';
+[2m     L168:  [22mfor (var [41mi[49m = (this.active_slot * 5); i <= ((this.active_slot * 5) + 4); i++) {
+[2m     L169:  [22m  if(typeof this.pagination[i] !== 'undefined'){
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/home/home.ts, line: 187 [39m
+            Duplicate variable: 'i' 
+
+[2m     L186:  [22mthis.next_page = 'show';
+[2m     L187:  [22mfor (var [41mi[49m = (this.active_slot * 5); i <= (((this.active_slot + 1) * 5) - 1); i++) {
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/featured-item/featured-item.ts, line: 165 [39m
+[2m     L188:  [22m  if(typeof this.pagination[i] !== 'undefined'){
+
+            Duplicate variable: 'i' 
+
+[2m     L164:  [22mthis.prev_page = 'show';
+[2m     L165:  [22mfor (var [41mi[49m = (this.active_slot * 5); i <= ((this.active_slot * 5) + 4); i++) {
+[2m     L166:  [22m  if(typeof this.pagination[i] !== 'undefined'){
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/featured-item/featured-item.ts, line: 184 [39m
+            Duplicate variable: 'i' 
+
+[2m     L183:  [22mthis.next_page = 'show';
+[2m     L184:  [22mfor (var [41mi[49m = (this.active_slot * 5); i <= (((this.active_slot + 1) * 5) - 1); i++) {
+[2m     L185:  [22m  if(typeof this.pagination[i] !== 'undefined'){
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/categories/categories.ts, line: 25 [39m
+            'cordova' is declared but its value is never read. 
+
+[2m      L25:  [22mdeclare var [41mc[49m[41mo[49m[41mr[49m[41md[49m[41mo[49m[41mv[49m[41ma[49m;
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/categories/categories.ts, line: 9 [39m
+            'TranslateModule' is declared but its value is never read. 
+
+[2m       L8:  [22mimport { HeaderColor } from '@ionic-native/header-color';
+[2m       L9:  [22mimport { [41mT[49m[41mr[49m[41ma[49m[41mn[49m[41ms[49m[41ml[49m[41ma[49m[41mt[49m[41me[49m[41mM[49m[41mo[49m[41md[49m[41mu[49m[41ml[49m[41me[49m, TranslateLoader, TranslateService } from '@ngx-translate/core';
+[2m      L10:  [22mimport { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer';
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/categories/categories.ts, line: 9 [39m
+            'TranslateLoader' is declared but its value is never read. 
+
+[2m       L8:  [22mimport { HeaderColor } from '@ionic-native/header-color';
+[2m       L9:  [22mimport { TranslateModule, [41mT[49m[41mr[49m[41ma[49m[41mn[49m[41ms[49m[41ml[49m[41ma[49m[41mt[49m[41me[49m[41mL[49m[41mo[49m[41ma[49m[41md[49m[41me[49m[41mr[49m, TranslateService } from '@ngx-translate/core';
+[2m      L10:  [22mimport { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer';
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/categories/categories.ts, line: 10 [39m
+            'FileUploadOptions' is declared but its value is never read. 
+
+[2m       L9:  [22mimport { TranslateModule, TranslateLoader, TranslateService } from '@ngx-translate/core';
+[2m      L10:  [22mimport { FileTransfer, [41mF[49m[41mi[49m[41ml[49m[41me[49m[41mU[49m[41mp[49m[41ml[49m[41mo[49m[41ma[49m[41md[49m[41mO[49m[41mp[49m[41mt[49m[41mi[49m[41mo[49m[41mn[49m[41ms[49m, FileTransferObject } from '@ionic-native/file-transfer';
+[2m      L11:  [22mimport { File } from '@ionic-native/file';
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/category-item/category-item.ts, line: 167 [39m
+            Duplicate variable: 'i' 
+
+[2m     L166:  [22mthis.prev_page = 'show';
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/category-item/category-item.ts, line: 186 [39m
+[2m     L167:  [22mfor (var [41mi[49m = (this.active_slot * 5); i <= ((this.active_slot * 5) + 4); i++) {
+[2m     L168:  [22m  if(typeof this.pagination[i] !== 'undefined'){
+
+            Duplicate variable: 'i' 
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/sub-categories/sub-categories.ts, line: 9 [39m
+[2m     L185:  [22mthis.next_page = 'show';
+[2m     L186:  [22mfor (var [41mi[49m = (this.active_slot * 5); i <= (((this.active_slot + 1) * 5) - 1); i++) {
+[2m     L187:  [22m  if(typeof this.pagination[i] !== 'undefined'){
+
+            'FileUploadOptions' is declared but its value is never read. 
+
+[2m       L8:  [22mimport { HomePage } from '../home/home';
+[2m       L9:  [22mimport { FileTransfer, [41mF[49m[41mi[49m[41ml[49m[41me[49m[41mU[49m[41mp[49m[41ml[49m[41mo[49m[41ma[49m[41md[49m[41mO[49m[41mp[49m[41mt[49m[41mi[49m[41mo[49m[41mn[49m[41ms[49m, FileTransferObject } from '@ionic-native/file-transfer';
+[2m      L10:  [22mimport { File } from '@ionic-native/file';
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/sub-category-item/sub-category-item.ts, line: 162 [39m
+            Duplicate variable: 'i' 
+
+[2m     L161:  [22mthis.prev_page = 'show';
+[2m     L162:  [22mfor (var [41mi[49m = (this.active_slot * 5); i <= ((this.active_slot * 5) + 4); i++) {
+[2m     L163:  [22m  if(typeof this.pagination[i] !== 'undefined'){
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/sub-category-item/sub-category-item.ts, line: 181 [39m
+            Duplicate variable: 'i' 
+
+[2m     L180:  [22mthis.next_page = 'show';
+[2m     L181:  [22mfor (var [41mi[49m = (this.active_slot * 5); i <= (((this.active_slot + 1) * 5) - 1); i++) {
+[2m     L182:  [22m  if(typeof this.pagination[i] !== 'undefined'){
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/orderitem/orderitem.ts, line: 172 [39m
+            Duplicate variable: 'i' 
+
+[2m     L171:  [22mthis.prev_page = 'show';
+[2m     L172:  [22mfor (var [41mi[49m = (this.active_slot * 5); i <= ((this.active_slot * 5) + 4); i++) {
+[2m     L173:  [22m  if(typeof this.pagination[i] !== 'undefined'){
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/orderitem/orderitem.ts, line: 191 [39m
+            Duplicate variable: 'i' 
+
+[2m     L190:  [22mthis.next_page = 'show';
+[2m     L191:  [22mfor (var [41mi[49m = (this.active_slot * 5); i <= (((this.active_slot + 1) * 5) - 1); i++) {
+[2m     L192:  [22m  if(typeof this.pagination[i] !== 'undefined'){
+
+            All imports on this line are unused. 
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/signup/signup.ts, line: 4 [39m
+
+[2m       L3:  [22mimport { Http } from '@angular/http';
+[2m       L4:  [22m[41mi[49m[41mm[49m[41mp[49m[41mo[49m[41mr[49m[41mt[49m { LoginPage } from '../login/login';
+[2m       L5:  [22mimport { HeaderColor } from '@ionic-native/header-color';
+
+            All imports on this line are unused. 
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/signup/signup.ts, line: 6 [39m
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/forgotpassword/forgotpassword.ts, line: 4 [39m
+[2m       L5:  [22mimport { HeaderColor } from '@ionic-native/header-color';
+[2m       L6:  [22m[41mi[49m[41mm[49m[41mp[49m[41mo[49m[41mr[49m[41mt[49m { SelectSearchableComponent } from 'ionic-select-searchable';
+[2m       L7:  [22mimport 'rxjs/add/operator/map';
+
+            All imports on this line are unused. 
+
+[2m       L3:  [22mimport { Http } from '@angular/http';
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/forgotpassword/forgotpassword.ts, line: 5 [39m
+[2m       L4:  [22m[41mi[49m[41mm[49m[41mp[49m[41mo[49m[41mr[49m[41mt[49m { SignupPage } from '../signup/signup';
+[2m       L5:  [22mimport { LoginPage } from '../login/login';
+
+            All imports on this line are unused. 
+
+[2m       L4:  [22mimport { SignupPage } from '../signup/signup';
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/slider/slider.ts, line: 1 [39m
+[2m       L5:  [22m[41mi[49m[41mm[49m[41mp[49m[41mo[49m[41mr[49m[41mt[49m { LoginPage } from '../login/login';
+[2m       L6:  [22mimport { HeaderColor } from '@ionic-native/header-color';
+
+            'ViewChild' is declared but its value is never read. 
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/slider/slider.ts, line: 2 [39m
+[2m       L1:  [22mimport { Component, [41mV[49m[41mi[49m[41me[49m[41mw[49m[41mC[49m[41mh[49m[41mi[49m[41ml[49m[41md[49m } from '@angular/core';
+[2m       L2:  [22mimport { IonicPage, NavController, NavParams, Slides } from 'ionic-angular';
+
+            'Slides' is declared but its value is never read. 
+
+[2m       L1:  [22mimport { Component, ViewChild } from '@angular/core';
+[2m       L2:  [22mimport { IonicPage, NavController, NavParams, [41mS[49m[41ml[49m[41mi[49m[41md[49m[41me[49m[41ms[49m } from 'ionic-angular';
+[2m       L3:  [22mimport { PhotoViewer } from '@ionic-native/photo-viewer';
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/search-item/search-item.ts, line: 144 [39m
+            Duplicate variable: 'i' 
+
+[2m     L143:  [22mthis.prev_page = 'show';
+[2m     L144:  [22mfor (var [41mi[49m = (this.active_slot * 5); i <= ((this.active_slot * 5) + 4); i++) {
+[2m     L145:  [22m  if(typeof this.pagination[i] !== 'undefined'){
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/search-item/search-item.ts, line: 163 [39m
+            Duplicate variable: 'i' 
+
+[2m     L162:  [22mthis.next_page = 'show';
+[2m     L163:  [22mfor (var [41mi[49m = (this.active_slot * 5); i <= (((this.active_slot + 1) * 5) - 1); i++) {
+[2m     L164:  [22m  if(typeof this.pagination[i] !== 'undefined'){
+
+            'City_name' is declared but its value is never read. 
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/profile/profile.ts, line: 142 [39m
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/app/app.component.ts, line: 2 [39m
+[2m     L141:  [22mvar Selected_state = '';
+[2m     L142:  [22mvar [41mC[49m[41mi[49m[41mt[49m[41my[49m[41m_[49m[41mn[49m[41ma[49m[41mm[49m[41me[49m = '';
+[2m     L143:  [22mthis.cities.filter(function(element, index) {
+
+            'Config' is declared but its value is never read. 
+
+[2m       L1:  [22mimport { Component, ViewChild } from '@angular/core';
+[2m       L2:  [22mimport { [41mC[49m[41mo[49m[41mn[49m[41mf[49m[41mi[49m[41mg[49m, Nav, Platform } from 'ionic-angular';
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/app/app.component.ts, line: 7 [39m
+[2m       L3:  [22mimport { StatusBar } from '@ionic-native/status-bar';
+
+            All imports on this line are unused. 
+
+[2m       L6:  [22mimport { HomePage } from '../pages/home/home';
+[2m       L7:  [22m[41mi[49m[41mm[49m[41mp[49m[41mo[49m[41mr[49m[41mt[49m { FeaturedItemPage } from '../pages/featured-item/featured-item';
+[2m       L8:  [22mimport { CategoriesPage } from '../pages/categories/categories';
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/app/app.component.ts, line: 8 [39m
+            All imports on this line are unused. 
+
+[2m       L7:  [22mimport { FeaturedItemPage } from '../pages/featured-item/featured-item';
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/app/app.component.ts, line: 9 [39m
+[2m       L8:  [22m[41mi[49m[41mm[49m[41mp[49m[41mo[49m[41mr[49m[41mt[49m { CategoriesPage } from '../pages/categories/categories';
+[2m       L9:  [22mimport { CategoryItemPage } from '../pages/category-item/category-item';
+
+            All imports on this line are unused. 
+
+[2m       L8:  [22mimport { CategoriesPage } from '../pages/categories/categories';
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/app/app.component.ts, line: 10 [39m
+[2m       L9:  [22m[41mi[49m[41mm[49m[41mp[49m[41mo[49m[41mr[49m[41mt[49m { CategoryItemPage } from '../pages/category-item/category-item';
+[2m      L10:  [22mimport { SubCategoriesPage } from '../pages/sub-categories/sub-categories';
+
+            All imports on this line are unused. 
+
+[2m       L9:  [22mimport { CategoryItemPage } from '../pages/category-item/category-item';
+[2m      L10:  [22m[41mi[49m[41mm[49m[41mp[49m[41mo[49m[41mr[49m[41mt[49m { SubCategoriesPage } from '../pages/sub-categories/sub-categories';
+[2m      L11:  [22mimport { SubCategoryItemPage } from '../pages/sub-category-item/sub-category-item';
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/app/app.component.ts, line: 11 [39m
+            All imports on this line are unused. 
+
+[2m      L10:  [22mimport { SubCategoriesPage } from '../pages/sub-categories/sub-categories';
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/app/app.component.ts, line: 12 [39m
+[2m      L11:  [22m[41mi[49m[41mm[49m[41mp[49m[41mo[49m[41mr[49m[41mt[49m { SubCategoryItemPage } from '../pages/sub-category-item/sub-category-item';
+[2m      L12:  [22mimport { CheckoutPage } from '../pages/checkout/checkout';
+
+            All imports on this line are unused. 
+
+[2m      L11:  [22mimport { SubCategoryItemPage } from '../pages/sub-category-item/sub-category-item';
+[2m      L12:  [22m[41mi[49m[41mm[49m[41mp[49m[41mo[49m[41mr[49m[41mt[49m { CheckoutPage } from '../pages/checkout/checkout';
+[2m      L13:  [22mimport { OrderPage } from '../pages/order/order';
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/app/app.component.ts, line: 13 [39m
+            All imports on this line are unused. 
+
+[2m      L12:  [22mimport { CheckoutPage } from '../pages/checkout/checkout';
+[2m      L13:  [22m[41mi[49m[41mm[49m[41mp[49m[41mo[49m[41mr[49m[41mt[49m { OrderPage } from '../pages/order/order';
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/app/app.component.ts, line: 14 [39m
+[2m      L14:  [22mimport { OrderitemPage } from '../pages/orderitem/orderitem';
+
+            All imports on this line are unused. 
+
+[2m      L13:  [22mimport { OrderPage } from '../pages/order/order';
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/app/app.component.ts, line: 15 [39m
+[2m      L14:  [22m[41mi[49m[41mm[49m[41mp[49m[41mo[49m[41mr[49m[41mt[49m { OrderitemPage } from '../pages/orderitem/orderitem';
+[2m      L15:  [22mimport { ChangepasswordPage } from '../pages/changepassword/changepassword';
+
+            All imports on this line are unused. 
+
+[2m      L14:  [22mimport { OrderitemPage } from '../pages/orderitem/orderitem';
+[2m      L15:  [22m[41mi[49m[41mm[49m[41mp[49m[41mo[49m[41mr[49m[41mt[49m { ChangepasswordPage } from '../pages/changepassword/changepassword';
+[2m      L16:  [22mimport { LoginPage } from '../pages/login/login';
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/app/app.component.ts, line: 16 [39m
+
+            All imports on this line are unused. 
+
+[2m      L15:  [22mimport { ChangepasswordPage } from '../pages/changepassword/changepassword';
+[2m      L16:  [22m[41mi[49m[41mm[49m[41mp[49m[41mo[49m[41mr[49m[41mt[49m { LoginPage } from '../pages/login/login';
+[2m      L17:  [22mimport { ForgotpasswordPage } from '../pages/forgotpassword/forgotpassword';
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/app/app.component.ts, line: 17 [39m
+            All imports on this line are unused. 
+
+[2m      L16:  [22mimport { LoginPage } from '../pages/login/login';
+[2m      L17:  [22m[41mi[49m[41mm[49m[41mp[49m[41mo[49m[41mr[49m[41mt[49m { ForgotpasswordPage } from '../pages/forgotpassword/forgotpassword';
+[2m      L18:  [22mimport { SignupPage } from '../pages/signup/signup';
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/app/app.component.ts, line: 18 [39m
+            All imports on this line are unused. 
+
+[2m      L17:  [22mimport { ForgotpasswordPage } from '../pages/forgotpassword/forgotpassword';
+[2m      L18:  [22m[41mi[49m[41mm[49m[41mp[49m[41mo[49m[41mr[49m[41mt[49m { SignupPage } from '../pages/signup/signup';
+[2m      L19:  [22mimport { ActivationPage } from '../pages/activation/activation';
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/app/app.component.ts, line: 19 [39m
+
+            All imports on this line are unused. 
+
+[2m      L18:  [22mimport { SignupPage } from '../pages/signup/signup';
+[2m      L19:  [22m[41mi[49m[41mm[49m[41mp[49m[41mo[49m[41mr[49m[41mt[49m { ActivationPage } from '../pages/activation/activation';
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/app/app.component.ts, line: 20 [39m
+[2m      L20:  [22mimport { SliderPage } from '../pages/slider/slider';
+
+            All imports on this line are unused. 
+
+[2m      L19:  [22mimport { ActivationPage } from '../pages/activation/activation';
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/app/app.component.ts, line: 21 [39m
+[2m      L20:  [22m[41mi[49m[41mm[49m[41mp[49m[41mo[49m[41mr[49m[41mt[49m { SliderPage } from '../pages/slider/slider';
+[2m      L21:  [22mimport { SearchPage } from '../pages/search/search';
+
+            All imports on this line are unused. 
+
+[2m      L20:  [22mimport { SliderPage } from '../pages/slider/slider';
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/app/app.component.ts, line: 22 [39m
+[2m      L21:  [22m[41mi[49m[41mm[49m[41mp[49m[41mo[49m[41mr[49m[41mt[49m { SearchPage } from '../pages/search/search';
+[2m      L22:  [22mimport { SearchItemPage } from '../pages/search-item/search-item';
+
+            All imports on this line are unused. 
+
+[2m      L21:  [22mimport { SearchPage } from '../pages/search/search';
+[2m      L22:  [22m[41mi[49m[41mm[49m[41mp[49m[41mo[49m[41mr[49m[41mt[49m { SearchItemPage } from '../pages/search-item/search-item';
+[2m      L23:  [22mimport { ProfilePage } from '../pages/profile/profile';
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/app/app.component.ts, line: 23 [39m
+            All imports on this line are unused. 
+
+[2m      L22:  [22mimport { SearchItemPage } from '../pages/search-item/search-item';
+[2m      L23:  [22m[41mi[49m[41mm[49m[41mp[49m[41mo[49m[41mr[49m[41mt[49m { ProfilePage } from '../pages/profile/profile';
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/providers/auto-suggest/auto-suggest.ts, line: 4 [39m
+            'Pipe' is declared but its value is never read. 
+
+[2m       L3:  [22mimport { HttpClient } from '@angular/common/http';
+[2m       L4:  [22mimport { Injectable, [41mP[49m[41mi[49m[41mp[49m[41me[49m, PipeTransform } from '@angular/core';
+[2m       L5:  [22mimport 'rxjs/add/operator/map';
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/providers/auto-suggest/auto-suggest.ts, line: 4 [39m
+            'PipeTransform' is declared but its value is never read. 
+
+[2m       L3:  [22mimport { HttpClient } from '@angular/common/http';
+[2m       L4:  [22mimport { Injectable, Pipe, [41mP[49m[41mi[49m[41mp[49m[41me[49m[41mT[49m[41mr[49m[41ma[49m[41mn[49m[41ms[49m[41mf[49m[41mo[49m[41mr[49m[41mm[49m } from '@angular/core';
+[2m       L5:  [22mimport 'rxjs/add/operator/map';
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/app/app.module.ts, line: 27 [39m
+            'IonicPro' is declared but its value is never read. 
+
+[2m      L27:  [22mconst [41mI[49m[41mo[49m[41mn[49m[41mi[49m[41mc[49m[41mP[49m[41mr[49m[41mo[49m = Pro.init('209AC7C2', {
+[2m      L28:  [22m  appVersion: '1.0.0'
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/app/app.module.ts, line: 6 [39m
+            'IonicPageModule' is declared but its value is never read. 
+
+[2m       L5:  [22mimport { ErrorHandler, NgModule, Injectable, Injector } from '@angular/core';
+[2m       L6:  [22mimport { IonicApp, IonicErrorHandler, IonicModule, [41mI[49m[41mo[49m[41mn[49m[41mi[49m[41mc[49m[41mP[49m[41ma[49m[41mg[49m[41me[49m[41mM[49m[41mo[49m[41md[49m[41mu[49m[41ml[49m[41me[49m } from 'ionic-angular';
+[2m       L7:  [22mimport { SplashScreen } from '@ionic-native/splash-screen';
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/app/app.module.ts, line: 17 [39m
+            'FileUploadOptions' is declared but its value is never read. 
+
+[2m      L16:  [22mimport { BarcodeScanner } from '@ionic-native/barcode-scanner';
+[2m      L17:  [22mimport { FileTransfer, [41mF[49m[41mi[49m[41ml[49m[41me[49m[41mU[49m[41mp[49m[41ml[49m[41mo[49m[41ma[49m[41md[49m[41mO[49m[41mp[49m[41mt[49m[41mi[49m[41mo[49m[41mn[49m[41ms[49m, FileTransferObject } from '@ionic-native/file-transfer';
+[2m      L18:  [22mimport { File } from '@ionic-native/file';
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/app/app.module.ts, line: 17 [39m
+            'FileTransferObject' is declared but its value is never read. 
+
+[2m      L16:  [22mimport { BarcodeScanner } from '@ionic-native/barcode-scanner';
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/categories/categories.module.ts, line: 5 [39m
+[2m      L17:  [22mimport { FileTransfer, FileUploadOptions, [41mF[49m[41mi[49m[41ml[49m[41me[49m[41mT[49m[41mr[49m[41ma[49m[41mn[49m[41ms[49m[41mf[49m[41me[49m[41mr[49m[41mO[49m[41mb[49m[41mj[49m[41me[49m[41mc[49m[41mt[49m } from '@ionic-native/file-transfer';
+[2m      L18:  [22mimport { File } from '@ionic-native/file';
+
+            All imports on this line are unused. 
+
+[2m       L4:  [22mimport { TranslateModule } from '@ngx-translate/core';
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/categories/categories.module.ts, line: 6 [39m
+[2m       L5:  [22m[41mi[49m[41mm[49m[41mp[49m[41mo[49m[41mr[49m[41mt[49m { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer';
+[2m       L6:  [22mimport { File } from '@ionic-native/file';
+
+            All imports on this line are unused. 
+
+[2m       L5:  [22mimport { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer';
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/categories/categories.module.ts, line: 7 [39m
+[2m       L6:  [22m[41mi[49m[41mm[49m[41mp[49m[41mo[49m[41mr[49m[41mt[49m { File } from '@ionic-native/file';
+[2m       L7:  [22mimport { BackgroundMode } from '@ionic-native/background-mode';
+
+            All imports on this line are unused. 
+
+[2m       L6:  [22mimport { File } from '@ionic-native/file';
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/sub-categories/sub-categories.module.ts, line: 5 [39m
+[2m       L7:  [22m[41mi[49m[41mm[49m[41mp[49m[41mo[49m[41mr[49m[41mt[49m { BackgroundMode } from '@ionic-native/background-mode';
+
+            All imports on this line are unused. 
+
+[2m       L4:  [22mimport { TranslateModule } from '@ngx-translate/core';
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/sub-categories/sub-categories.module.ts, line: 6 [39m
+[2m       L5:  [22m[41mi[49m[41mm[49m[41mp[49m[41mo[49m[41mr[49m[41mt[49m { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer';
+[2m       L6:  [22mimport { File } from '@ionic-native/file';
+
+            All imports on this line are unused. 
+
+[2m       L5:  [22mimport { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer';
+[2m       L6:  [22m[41mi[49m[41mm[49m[41mp[49m[41mo[49m[41mr[49m[41mt[49m { File } from '@ionic-native/file';
+[2m       L7:  [22mimport { BackgroundMode } from '@ionic-native/background-mode';
+
+[33m[20:00:53]  tslint: C:/VSSS/VSSS_IOS/src/pages/sub-categories/sub-categories.module.ts, line: 7 [39m
+            All imports on this line are unused. 
+
+[2m       L6:  [22mimport { File } from '@ionic-native/file';
+[2m       L7:  [22m[41mi[49m[41mm[49m[41mp[49m[41mo[49m[41mr[49m[41mt[49m { BackgroundMode } from '@ionic-native/background-mode';
+
+[20:00:53]  lint finished in 4.81 s 
+> cordova build ios -d
+Executing script found in plugin cordova-plugin-ionic for hook "before_build": plugins\cordova-plugin-ionic\hooks\beforeBuild.js
+No scripts found for hook "before_prepare".
+Checking config.xml and package.json for saved platforms that haven't been added to the project
+Config.xml and package.json platforms are the same. No pkg.json modification.
+Package.json and config.xml platforms are different. Updating config.xml with most current list of platforms.
+PlatformApi successfully found for platform ios
+Checking config.xml for saved plugins that haven't been added to the project
+Checking for any plugins added to the project that have not been installed in ios platform
+No differences found between plugins added to project and installed in ios platform. Continuing...
+Generating platform-specific config.xml from defaults for iOS at C:\VSSS\VSSS_IOS\platforms\ios\VSSS - Vishal stationery super store\config.xml
+Merging project's config.xml into platform-specific iOS config.xml
+Merging and updating files from [www, platforms\ios\platform_www] to platforms\ios\www
+  copy  www\assets\fonts\ionicons.eot platforms\ios\www\assets\fonts\ionicons.eot (updated file)
+  copy  www\assets\fonts\ionicons.scss platforms\ios\www\assets\fonts\ionicons.scss (updated file)
+  copy  www\assets\fonts\ionicons.svg platforms\ios\www\assets\fonts\ionicons.svg (updated file)
+  copy  www\assets\fonts\ionicons.ttf platforms\ios\www\assets\fonts\ionicons.ttf (updated file)
+  copy  www\assets\fonts\ionicons.woff platforms\ios\www\assets\fonts\ionicons.woff (updated file)
+  copy  www\assets\fonts\ionicons.woff2 platforms\ios\www\assets\fonts\ionicons.woff2 (updated file)
+  copy  www\assets\fonts\noto-sans-bold.ttf platforms\ios\www\assets\fonts\noto-sans-bold.ttf (updated file)
+  copy  www\assets\fonts\noto-sans-bold.woff platforms\ios\www\assets\fonts\noto-sans-bold.woff (updated file)
+  copy  www\assets\fonts\noto-sans-regular.ttf platforms\ios\www\assets\fonts\noto-sans-regular.ttf (updated file)
+  copy  www\assets\fonts\noto-sans-regular.woff platforms\ios\www\assets\fonts\noto-sans-regular.woff (updated file)
+  copy  www\assets\fonts\noto-sans.scss platforms\ios\www\assets\fonts\noto-sans.scss (updated file)
+  copy  www\assets\fonts\roboto-bold.ttf platforms\ios\www\assets\fonts\roboto-bold.ttf (updated file)
+  copy  www\assets\fonts\roboto-bold.woff platforms\ios\www\assets\fonts\roboto-bold.woff (updated file)
+  copy  www\assets\fonts\roboto-bold.woff2 platforms\ios\www\assets\fonts\roboto-bold.woff2 (updated file)
+  copy  www\assets\fonts\roboto-light.ttf platforms\ios\www\assets\fonts\roboto-light.ttf (updated file)
+  copy  www\assets\fonts\roboto-light.woff platforms\ios\www\assets\fonts\roboto-light.woff (updated file)
+  copy  www\assets\fonts\roboto-light.woff2 platforms\ios\www\assets\fonts\roboto-light.woff2 (updated file)
+  copy  www\assets\fonts\roboto-medium.ttf platforms\ios\www\assets\fonts\roboto-medium.ttf (updated file)
+  copy  www\assets\fonts\roboto-medium.woff platforms\ios\www\assets\fonts\roboto-medium.woff (updated file)
+  copy  www\assets\fonts\roboto-medium.woff2 platforms\ios\www\assets\fonts\roboto-medium.woff2 (updated file)
+  copy  www\assets\fonts\roboto-regular.ttf platforms\ios\www\assets\fonts\roboto-regular.ttf (updated file)
+  copy  www\assets\fonts\roboto-regular.woff platforms\ios\www\assets\fonts\roboto-regular.woff (updated file)
+  copy  www\assets\fonts\roboto-regular.woff2 platforms\ios\www\assets\fonts\roboto-regular.woff2 (updated file)
+  copy  www\assets\fonts\roboto.scss platforms\ios\www\assets\fonts\roboto.scss (updated file)
+  copy  www\assets\i18n\New Text Document.txt platforms\ios\www\assets\i18n\New Text Document.txt (updated file)
+  copy  www\assets\i18n\english.json platforms\ios\www\assets\i18n\english.json (updated file)
+  copy  www\assets\i18n\gujarati.json platforms\ios\www\assets\i18n\gujarati.json (updated file)
+  copy  www\assets\icon\favicon.ico platforms\ios\www\assets\icon\favicon.ico (updated file)
+  copy  www\assets\imgs\logo.png platforms\ios\www\assets\imgs\logo.png (updated file)
+  copy  www\build\0.js platforms\ios\www\build\0.js (updated file)
+  copy  www\build\0.js.map platforms\ios\www\build\0.js.map (updated file)
+  copy  www\build\1.js platforms\ios\www\build\1.js (updated file)
+  copy  www\build\1.js.map platforms\ios\www\build\1.js.map (updated file)
+  copy  www\build\10.js platforms\ios\www\build\10.js (updated file)
+  copy  www\build\10.js.map platforms\ios\www\build\10.js.map (updated file)
+  copy  www\build\11.js platforms\ios\www\build\11.js (updated file)
+  copy  www\build\11.js.map platforms\ios\www\build\11.js.map (updated file)
+  copy  www\build\12.js platforms\ios\www\build\12.js (updated file)
+  copy  www\build\12.js.map platforms\ios\www\build\12.js.map (updated file)
+  copy  www\build\13.js platforms\ios\www\build\13.js (updated file)
+  copy  www\build\13.js.map platforms\ios\www\build\13.js.map (updated file)
+  copy  www\build\14.js platforms\ios\www\build\14.js (updated file)
+  copy  www\build\14.js.map platforms\ios\www\build\14.js.map (updated file)
+  copy  www\build\15.js platforms\ios\www\build\15.js (updated file)
+  copy  www\build\15.js.map platforms\ios\www\build\15.js.map (updated file)
+  copy  www\build\16.js platforms\ios\www\build\16.js (updated file)
+  copy  www\build\16.js.map platforms\ios\www\build\16.js.map (updated file)
+  copy  www\build\17.js platforms\ios\www\build\17.js (updated file)
+  copy  www\build\17.js.map platforms\ios\www\build\17.js.map (updated file)
+  copy  www\build\2.js platforms\ios\www\build\2.js (updated file)
+  copy  www\build\2.js.map platforms\ios\www\build\2.js.map (updated file)
+  copy  www\build\3.js platforms\ios\www\build\3.js (updated file)
+  copy  www\build\3.js.map platforms\ios\www\build\3.js.map (updated file)
+  copy  www\build\4.js platforms\ios\www\build\4.js (updated file)
+  copy  www\build\4.js.map platforms\ios\www\build\4.js.map (updated file)
+  copy  www\build\5.js platforms\ios\www\build\5.js (updated file)
+  copy  www\build\5.js.map platforms\ios\www\build\5.js.map (updated file)
+  copy  www\build\6.js platforms\ios\www\build\6.js (updated file)
+  copy  www\build\6.js.map platforms\ios\www\build\6.js.map (updated file)
+  copy  www\build\7.js platforms\ios\www\build\7.js (updated file)
+  copy  www\build\7.js.map platforms\ios\www\build\7.js.map (updated file)
+  copy  www\build\8.js platforms\ios\www\build\8.js (updated file)
+  copy  www\build\8.js.map platforms\ios\www\build\8.js.map (updated file)
+  copy  www\build\9.js platforms\ios\www\build\9.js (updated file)
+  copy  www\build\9.js.map platforms\ios\www\build\9.js.map (updated file)
+  copy  www\build\main.css platforms\ios\www\build\main.css (updated file)
+  copy  www\build\main.css.map platforms\ios\www\build\main.css.map (updated file)
+  copy  www\build\main.js platforms\ios\www\build\main.js (updated file)
+  copy  www\build\main.js.map platforms\ios\www\build\main.js.map (updated file)
+  copy  www\build\polyfills.js platforms\ios\www\build\polyfills.js (updated file)
+  copy  www\build\sw-toolbox.js platforms\ios\www\build\sw-toolbox.js (updated file)
+  copy  www\build\vendor.js platforms\ios\www\build\vendor.js (updated file)
+  copy  www\build\vendor.js.map platforms\ios\www\build\vendor.js.map (updated file)
+  copy  www\index.html platforms\ios\www\index.html (updated file)
+  copy  www\manifest.json platforms\ios\www\manifest.json (updated file)
+  copy  www\service-worker.js platforms\ios\www\service-worker.js (updated file)
+Current launch storyboard CDVLaunchScreen
+Not changing launch storyboard setting in info plist.
+Wrote out iOS Bundle Identifier "com.bits.vsss" and iOS Bundle Version "1.0.0" to C:\VSSS\VSSS_IOS\platforms\ios\VSSS - Vishal stationery super store\VSSS - Vishal stationery super store-Info.plist
+No need to update build settings for launch storyboard support.
+iOS Product Name has not changed (still "VSSS - Vishal stationery super store")
+Updating icons at platforms\ios\VSSS - Vishal stationery super store\Images.xcassets\AppIcon.appiconset\
+Updating splash screens at platforms\ios\VSSS - Vishal stationery super store\Images.xcassets\LaunchImage.launchimage\
+Updating launch storyboard images at platforms\ios\VSSS - Vishal stationery super store\Images.xcassets\LaunchStoryboard.imageset\
+Updating Storyboard image set contents.json
+This app does not have additional resource files defined
+Prepared iOS project successfully
+No scripts found for hook "after_prepare".
+No scripts found for hook "before_compile".
+Error: xcodebuild was not found. Please install version 7.0.0 or greater from App Store
