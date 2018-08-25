@@ -24,7 +24,7 @@ import { HomePage } from '../pages/home/home';
 import { DataProvider } from '../providers/data/data';
 import { AutoSuggestProvider } from '../providers/auto-suggest/auto-suggest';
 
-const IonicPro = Pro.init('209AC7C2', {
+const IonicPro = Pro.init('BE3F8575', {
   appVersion: '1.0.0'
 })
 
