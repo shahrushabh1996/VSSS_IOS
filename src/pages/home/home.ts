@@ -72,6 +72,7 @@ export class HomePage {
   active_slot = 0;
 
   constructor(public navCtrl: NavController, public device: Device, public http: Http, public platform: Platform, public loadingCtrl: LoadingController, public socialSharing: SocialSharing, public actionSheetCtrl: ActionSheetController, public headerColor: HeaderColor, public translate: TranslateService, public barcodeScanner: BarcodeScanner) {
+    alert('constructor');
     this.translate.setDefaultLang('english');
     this.headerColor.tint('#2874f0');
     translate.get(['Edit_profile', 'Order_history', 'Order_item_history', 'Change_password', 'Logout']).subscribe(res => {
@@ -84,7 +85,9 @@ export class HomePage {
   }
 
   ionViewWillEnter(){
+  	alert('ionViewWillEnter');
     this.platform.ready().then(() => {
+      alert('platform.ready');
       this.device_data['IMEI'] = this.device.uuid === null ? '630fcc683424e59f' : this.device.uuid;
       this.scroll_top = false;
       this.get_data();
@@ -92,9 +95,11 @@ export class HomePage {
   }
 
   get_data(){
+  	alert('get_data');
   	var link = 'https://www.vsss.co.in/Android/check_login';
     var post_data = JSON.stringify({IMEI: this.device_data['IMEI']});
     this.http.post(link, post_data).map(res => res.json()).subscribe(data => {
+    	alert('http success');
         if(data == 0){
           this.navCtrl.push('LoginPage');
         }
